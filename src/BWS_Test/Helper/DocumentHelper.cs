@@ -7,6 +7,8 @@ using System.Linq;
 
 namespace BWS_Plugin.Helper
 {
+    //возможно статический класс излишен, т.к. после использования будет висеть в памяти, 
+    //но мне не понравилась идея в FlatColorizer реализовывать методы.
     static internal class DocumentHelper
     {
         public static ICollection<Element> GetAllRooms(FilteredElementCollector elements)
